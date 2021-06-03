@@ -6,11 +6,11 @@ namespace dev_homework02
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Problema de los Conejos (Secuencia de Fibonacci)");
-            Console.WriteLine("La secuncia de Fibonacci es 1,1,2,3,4,5,6,7 \n\n");
+            
+            Console.WriteLine("\n");
             
             Console.WriteLine(@"
-            PROBLEMA
+            PROBLEMA 1: Los Conejos (Secuencia de Fibonacci)
             
             Supongamos que un granjero tiene un par de conejos.
             Los conejos tardan dos meses en alcanzar la madurez, y después de eso dan a luz a otro par de conejos cada mes.
@@ -55,6 +55,8 @@ namespace dev_homework02
                  Console.WriteLine($"Mes {i+1} hay un total parejas: {parejas[i]}");
             }    
 
+
+            Console.WriteLine("\n");
 
         }
     }
