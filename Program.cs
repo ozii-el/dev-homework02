@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 
 namespace dev_homework02
 {
@@ -7,7 +8,7 @@ namespace dev_homework02
         static void Main(string[] args)
         {
             
-            Console.WriteLine("\n");
+            /* Console.WriteLine("\n");
             
             Console.WriteLine(@"
             PROBLEMA 1: Los Conejos (Secuencia de Fibonacci)
@@ -45,7 +46,7 @@ namespace dev_homework02
             Para el mes 4 se sumara la cantidad de conejos del mes 3 y del mes 2
             Para el mes 5 se sumara la cantidad de conejos del mes 4 y del mes 4
             y asi sucesivamente.
-            */ 
+             
 
             for(int i = 2; i < meses; i++){
                 //parejas[i] es el mes actual. (iniciamos en la posicion 2, que corresonde al mes 3)
@@ -56,7 +57,172 @@ namespace dev_homework02
             }    
 
 
+            Console.WriteLine("\n"); */
+
+            Console.WriteLine("\n"); //Salto de linea
+            Console.WriteLine("**************************************");
+            Console.WriteLine("TAREA - Ejercicio 01");
+            Console.WriteLine("Secuencia Sencilla 10");
+            
+            
+            int seq = 10;
+            for(int i = 0; i < seq; i++){
+            
+                 Console.WriteLine($"{i+1}");
+            }
+
+            
+            
+            Console.WriteLine("\n"); //Salto de linea
+            Console.WriteLine("**************************************");
+
+
+            Console.WriteLine("\n"); //Salto de linea
+            Console.WriteLine("**************************************");
+            Console.WriteLine("TAREA - Ejercicio 01.1");
+            Console.WriteLine("Secuencia Sencilla 50");
+            
+            
+            int seqi = 50;
+            for(int i = 0; i < seqi; i++){
+            
+                 Console.WriteLine($"{i+1}");
+            }
+
+            
+            
+            Console.WriteLine("\n"); //Salto de linea
+            Console.WriteLine("**************************************");
+
+
+            Console.WriteLine("\n"); //Salto de linea
+            Console.WriteLine("**************************************");
+            Console.WriteLine("TAREA - Ejercicio 01.2");
+            Console.WriteLine("Secuencia Sencilla 100");
+            
+            
+            int seqii = 100;
+            for(int i = 0; i < seqii; i++){
+            
+                 Console.WriteLine($"{i+1}");
+            }
+
+            
+            
+            Console.WriteLine("\n"); //Salto de linea
+            Console.WriteLine("**************************************");
+
+            Console.WriteLine("\n"); //Salto de linea
+            Console.WriteLine("**************************************");
+            Console.WriteLine("TAREA - Ejercicio 2");
+            Console.WriteLine("Menor Mayor-10");
+            
+            int[] arr = new int[10] {1,2,3,4,5,6,7,8,9,10} ; 
+        
             Console.WriteLine("\n");
+            arr = arr.OrderByDescending(c => c).ToArray();
+            Console.WriteLine("Descendiente:\n"); 
+            foreach(int value in arr) 
+            { 
+            Console.Write(value + " "); 
+            } 
+
+
+            Console.WriteLine("\n"); //Salto de linea
+            Console.WriteLine("**************************************");
+
+            Console.WriteLine("\n"); //Salto de linea
+            Console.WriteLine("**************************************");
+            Console.WriteLine("TAREA - Ejercicio 2.1");
+            Console.WriteLine("Menor Mayor-20");
+            
+            int[] arrr = new int[] {1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,14,15,16,17,18,19,20} ; 
+        
+            Console.WriteLine("\n");
+            arrr = arrr.OrderByDescending(c => c).ToArray();
+            Console.WriteLine("Descendiente:\n"); 
+            foreach(int value in arrr) 
+            { 
+            Console.Write(value + " "); 
+            }
+
+
+
+            Console.WriteLine("\n"); //Salto de linea
+            Console.WriteLine("**************************************");
+            Console.WriteLine("TAREA - Ejercicio 3");
+            Console.WriteLine("String");
+            
+            
+            var arreglo = new string[]{"uno","dos","tres","cuatro","cinco"};
+            
+            for(int i=1; i < arreglo.Length; i++ ) {
+                
+            
+                 Console.WriteLine($"{arreglo[i]}");
+            }
+
+            
+            
+            Console.WriteLine("\n"); //Salto de linea
+            Console.WriteLine("**************************************");
+
+
+
+            Console.WriteLine("\n"); //Salto de linea
+            Console.WriteLine("**************************************");
+            Console.WriteLine("TAREA - Ejercicio 4");
+            Console.WriteLine("String 2");
+            
+            
+            var obi = new string[]{"Hello","There!",};
+            var griveus = new string[]{"General","Kenobi!",};
+            
+            for(int i=0; i < obi.Length; i++ ) {
+                
+            
+                 Console.WriteLine($"{obi[i]}");
+            }
+            for(int i=0; i < griveus.Length; i++ ) {
+                
+            
+                 Console.WriteLine($"{griveus[i]}");
+            }
+
+            
+            
+            Console.WriteLine("\n"); //Salto de linea
+            Console.WriteLine("**************************************");
+
+
+
+            Console.WriteLine("\n"); //Salto de linea
+            Console.WriteLine("**************************************");
+            Console.WriteLine("TAREA - Ejercicio 05");
+            Console.WriteLine("Escaleras");
+            
+            Console.WriteLine("3 peldaños\n"); //Salto de linea
+            int esc = 3;
+            for(int i = 0; i < esc; i++){
+            
+                 Console.WriteLine($"{i+1}");
+            }
+            Console.WriteLine("\n"); //Salto de linea
+            Console.WriteLine("7 peldaños\n"); //Salto de linea
+            int esca = 7;
+            for(int i = 0; i < esca; i++){
+            
+                 Console.WriteLine($"{i+1}");
+            }
+
+            
+            
+            Console.WriteLine("\n"); //Salto de linea
+            Console.WriteLine("**************************************");
+
+            
+
+
 
         }
     }
